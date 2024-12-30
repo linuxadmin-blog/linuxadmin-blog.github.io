@@ -11,6 +11,6 @@ social:
   link: "https://linkedin.com/in/akkokugurcan"
 ---
 
-I'm Uğurcan Akkök, a DevOps Engineer with a principles-first approach to building reliable and efficient systems using tools like Kubernetes, Docker, Jenkins, and Ansible.
+I'm Ugurcan Akkok, a DevOps Engineer with a principles-first approach to building reliable and efficient systems using my expertise on Kubernetes, Linux, Containers and Virtualisation, Scripting, Automation and Cloud.
 
-I prioritize scalability, maintainability, and automation, ensuring every solution aligns with long-term goals and best practices.
+I prioritize scalability, maintainability, efficiency and automation, ensuring every solution aligns with long-term goals and best practices.
