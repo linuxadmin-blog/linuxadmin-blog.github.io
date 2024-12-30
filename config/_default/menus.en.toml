@@ -29,5 +29,5 @@ url = "code-of-conduct/"
 weight = 4
 [[footer]]
 name = "Contributing"
-url = "contributing/"
+url = "contribution-guide/"
 weight = 5

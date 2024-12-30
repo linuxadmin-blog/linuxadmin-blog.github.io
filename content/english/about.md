@@ -43,6 +43,10 @@ what_i_do:
     description: ""
 ---
 
-This platform is a growing community rooted in open-source principles, where professionals share their knowledge and expertise on security, virtualization, and automation technologies such as grype.io, KVM, Docker, and Kubernetes. 
+This platform is a growing community rooted in open-source principles, where professionals share their knowledge and expertise on security, virtualization, and automation technologies. 
 
 Members of this community collaborate to empower individuals and organizations by offering independent services and insights, fostering an environment of innovation and continuous learning.
+
+We invite you to join our community by sharing your expertise, collaborating on projects, and engaging with fellow professionals. For a respectful, harassment-free environment, you can view the [Contribution Guide](https://linuxadmin.blog/contribution-guide) for further information.
+
+Please read our [Code of Conduct](https://linuxadmin.blog/code-of-conduct), which outlines our guidelines and expectations for all members to foster an inclusive and welcoming space.
