@@ -1,0 +1,3 @@
+[submodule "themes/bookworm-light-hugo"]
+	path = themes/bookworm-light-hugo
+	url = https://github.com/gethugothemes/bookworm-light-hugo

@@ -1,0 +1,36 @@
+favicon = "images/favicon_light.png"
+logo = "images/logo_light.png"
+logo_width = "128px"
+logo_webp = true
+logo_text = "linuxadmin.blog"
+purge_css = true
+menu_align = "right"
+mainSections = ["blog"]
+post_layout = "grid"
+image_gallery = true
+theme_copyright = true
+copyright = "All rights reversed!"
+[preloader]
+enable = true
+preloader = "images/logo_light.png"
+[search]
+enable = true
+primary_color = "#01AD9F"
+include_sections = []
+show_image = true
+show_description = true
+show_tags = true
+show_categories = true
+[metadata]
+keywords = ["Linux", "Security", "Virtualization", "Automation"]
+description = "Notes on Linux, Security, Virtualization, Automation and more."
+author = "linuxadmin.blog"
+image = "images/logo_light.png"
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+[[social]]
+icon = "lab la-github"
+url = "https://www.github.com/linuxadmin-blog"

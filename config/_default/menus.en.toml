@@ -1,0 +1,33 @@
+
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+[[main]]
+name = "Tags"
+url = "tags/"
+weight = 2
+[[main]]
+name = "Category"
+url = "categories/"
+weight = 3
+[[footer]]
+name = "Home"
+url = "/"
+weight = 1
+[[footer]]
+name = "About"
+url = "about/"
+weight = 2
+[[footer]]
+name = "Authors"
+url = "author/"
+weight = 3
+[[footer]]
+name = "Code of Conduct"
+url = "code-of-conduct/"
+weight = 4
+[[footer]]
+name = "Contributing"
+url = "contributing/"
+weight = 5
