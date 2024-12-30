@@ -1,6 +1,6 @@
 ---
 title: "Ugurcan Akkok"
-image: "images/author/furkan.gif"
+image: "images/author/ugurcan.gif"
 email: "akkokugurcan@gmail.com"
 date: 2024-12-30T23:04:00+03:00
 draft: false
