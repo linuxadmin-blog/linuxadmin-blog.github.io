@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: "about"
-image: "images/astronaut.gif"
+image: "images/about.gif"
 draft: false
 
 caption:
