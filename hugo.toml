@@ -1,0 +1,28 @@
+baseurl = "https://linuxadmin.blog"
+languageCode = "en-us"
+theme = "terminal"
+pagination.pagerSize = 5
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 2
+  fullWidthTheme = false
+  centerTheme = true
+  dateFormat = "02-01-2006"
+
+[languages]
+  [languages.en]
+    title = "LinuxAdmin.blog"
+    subtitle = "Notes on security, virtualization and automation"
+    keywords = "security, virtualization, automation, linux, system admin"
+    copyright = "All rights reversed!"
+    menuMore = "Show more"
+    readMore = "ReadMore"
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "LinuxAdmin.blog"
+      logoHomeLink = "/"
