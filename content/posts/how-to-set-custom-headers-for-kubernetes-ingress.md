@@ -1,6 +1,6 @@
 ---
 title: "How to set custom headers for Kubernetes Ingress"
-date: 2025-6-15
+date: 2025-06-15
 author: "Furkan Demir"
 tags: ["Kubernetes", "Ingress-Nginx"]
 categories: ["Kubernetes"]
