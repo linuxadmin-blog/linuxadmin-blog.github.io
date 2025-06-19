@@ -4,7 +4,7 @@ date: 2025-06-20
 author: "Ugurcan Akkok"
 tags: ["Kubernetes", "Linux"]
 categories: ["Kubernetes"]
-draft: true
+draft: false
 ---
 
 Today we will deep-dive into the linux utility/syscalls nsenter and we will enter a kubernetes node with it, without using ssh or any other middleware.
