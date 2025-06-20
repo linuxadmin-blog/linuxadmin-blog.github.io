@@ -1,6 +1,6 @@
 ---
 title: "NSEnter and Kubernetes"
-date: 2025-06-20
+date: 2025-06-19
 author: "Ugurcan Akkok"
 tags: ["Kubernetes", "Linux"]
 categories: ["Kubernetes"]
