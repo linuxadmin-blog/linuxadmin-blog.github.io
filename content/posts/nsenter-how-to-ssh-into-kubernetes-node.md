@@ -12,14 +12,14 @@ Today we will deep dive into the linux utility nsenter and we will enter a kuber
 # Introduction to NSEnter
 So, what is nsenter?
 
-> NAME
->       nsenter - run program in different namespaces
+> NAME 
+>       nsenter - run program in different namespaces 
 > 
-> SYNOPSIS
->       nsenter [options] [program [arguments]]
+> SYNOPSIS 
+>       nsenter [options] [program [arguments]] 
 > 
-> DESCRIPTION
->       The nsenter command executes program in the namespace(s) that are specified in the command-line options (described below). If program is not given, then "${SHELL}" is run (default: /bin/sh).
+> DESCRIPTION 
+>       The nsenter command executes program in the namespace(s) that are specified in the command-line options (described below). If program is not given, then "${SHELL}" is run (default: /bin/sh). 
 > (...)
 
 The `nsenter` is a handy tool for *entering* into any given linux namespace. As you might know, a linux namespace is a sandboxing technology used for isolating different aspects of a program. The list of namespaces are as follows, taken from [namespaces(7)](https://man.archlinux.org/man/namespaces.7).
