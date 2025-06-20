@@ -41,6 +41,48 @@ For example we can set our mount namespace to PID 5912's mount namespace, so we 
 Or we can set our PID namespace to PID 5912's namespace, which would allow us to see other processes in that namespace.
 This might seem harmless at first. However, the danger emerges when namespace isolation is actively used for securing different programs on a single host, which is precisely the foundation of Kubernetes.
 
+The usage of `nsenter` is pretty straight-forward. For the basic usage, we can specify that we want all the namespaces `-a` and give the PID `-t <PID>` of the program we want to enter to.
+
+```
+$ nsenter --help
+
+Usage:
+ nsenter [options] [<program> [<argument>...]]
+
+Run a program with namespaces of other processes.
+
+Options:
+ -a, --all              enter all namespaces
+ -t, --target <pid>     target process to get namespaces from
+ -m, --mount[=<file>]   enter mount namespace
+ -u, --uts[=<file>]     enter UTS namespace (hostname etc)
+ -i, --ipc[=<file>]     enter System V IPC namespace
+ -n, --net[=<file>]     enter network namespace
+ -N, --net-socket <fd>  enter socket's network namespace (use with --target)
+ -p, --pid[=<file>]     enter pid namespace
+ -C, --cgroup[=<file>]  enter cgroup namespace
+ -U, --user[=<file>]    enter user namespace
+     --user-parent      enter parent user namespace
+ -T, --time[=<file>]    enter time namespace
+ -S, --setuid[=<uid>]   set uid in entered namespace
+ -G, --setgid[=<gid>]   set gid in entered namespace
+     --preserve-credentials do not touch uids or gids
+     --keep-caps        retain capabilities granted in user namespaces
+ -r, --root[=<dir>]     set the root directory
+ -w, --wd[=<dir>]       set the working directory
+ -W, --wdns <dir>       set the working directory in namespace
+ -e, --env              inherit environment variables from target process
+ -F, --no-fork          do not fork before exec'ing <program>
+ -c, --join-cgroup      join the cgroup of the target process
+
+ -h, --help             display this help
+ -V, --version          display version
+
+For more details see nsenter(1).
+```
+
+As you can see, `nsenter` provides flexible way to specify the namespace and program. Behind the scenes, it uses the `setns` syscall for entering into given namespace.
+
 # NSEnter and Kubernetes
 
 In Kubernetes, as you might already know, we run separate processes that are isolated from each other on a single host. Those processes could, for example, belong to different customers or different teams. Even if they belong to the same team/people, you want strong isolation because of security. Any given attacker with access to a process (or pod in Kubernetes) should not be able to jump to other processes in the host. We should isolate where we can to improve our security.
